@@ -6,13 +6,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constrainId"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".OrderActivities.Order">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/reservation_list_accepted"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -26,5 +26,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

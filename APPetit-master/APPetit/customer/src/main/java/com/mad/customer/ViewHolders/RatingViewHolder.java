@@ -1,8 +1,7 @@
 package com.mad.customer.ViewHolders;
 
-import android.media.Image;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -18,9 +17,6 @@ import com.mad.customer.R;
 import com.mad.mylibrary.ReviewItem;
 
 import static com.mad.mylibrary.SharedClass.CUSTOMER_PATH;
-import static com.mad.mylibrary.SharedClass.RESERVATION_PATH;
-import static com.mad.mylibrary.SharedClass.RESTAURATEUR_INFO;
-import static com.mad.mylibrary.SharedClass.ROOT_UID;
 
 public class RatingViewHolder extends RecyclerView.ViewHolder {
     private TextView name, comment;

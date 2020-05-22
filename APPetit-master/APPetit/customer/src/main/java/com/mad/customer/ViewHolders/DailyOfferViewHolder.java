@@ -1,19 +1,15 @@
 package com.mad.customer.ViewHolders;
 
-import android.os.StrictMode;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 import com.mad.customer.Items.DishItem;
 import com.mad.customer.R;
 
-import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
 
 public class DailyOfferViewHolder extends RecyclerView.ViewHolder{
     private ImageView dishPhoto;

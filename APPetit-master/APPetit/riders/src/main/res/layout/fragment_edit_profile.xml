@@ -4,7 +4,7 @@
     android:id="@+id/myScrollView1"
     android:layout_width="fill_parent" android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ProfileManagment.EditProfile">
@@ -109,5 +109,5 @@
             app:srcCompat="@drawable/ic_add_circle_black_24dp" />
 
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

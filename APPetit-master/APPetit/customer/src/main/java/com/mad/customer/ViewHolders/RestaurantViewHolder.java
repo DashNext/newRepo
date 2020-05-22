@@ -3,9 +3,9 @@ package com.mad.customer.ViewHolders;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -20,7 +20,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.mad.customer.UI.OrderingFragment;
 import com.mad.customer.R;
 import com.mad.customer.UI.TabApp;
 import com.mad.mylibrary.Restaurateur;
@@ -29,7 +28,6 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.UUID;
 
 import static com.mad.mylibrary.SharedClass.CUSTOMER_FAVOURITE_RESTAURANT_PATH;
 import static com.mad.mylibrary.SharedClass.CUSTOMER_PATH;
