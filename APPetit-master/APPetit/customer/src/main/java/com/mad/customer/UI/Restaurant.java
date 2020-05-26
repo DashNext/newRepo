@@ -621,7 +621,7 @@ public class Restaurant extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        mAdapter.stopListening();
+        //mAdapter.stopListening();
     }
 
     @Override
