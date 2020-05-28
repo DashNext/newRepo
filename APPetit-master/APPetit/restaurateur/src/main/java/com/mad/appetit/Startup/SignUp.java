@@ -14,6 +14,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.mad.appetit.R;
 import com.mad.mylibrary.Restaurateur;
+import com.google.android.libraries.places.api.Places;
+
 
 import static com.mad.mylibrary.SharedClass.PERMISSION_GALLERY_REQUEST;
 import static com.mad.mylibrary.SharedClass.RESTAURATEUR_INFO;
@@ -73,8 +75,9 @@ public class SignUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        // Initialize Places.
-        Places.initialize(getApplicationContext(), "AIzaSyCb9PlTGBrsiKPz_Vrd7YivegYxz437Y6o");
+        // Initialize Places. using maps API key
+        Places.initialize(getApplicationContext(), "AIzaSyCeKNhWz_3m5vSbKfRkWox-ILAQNgXqbUM");
+        //Places key "AIzaSyCb9PlTGBrsiKPz_Vrd7YivegYxz437Y6o"
         // Create a new Places client instance.
         PlacesClient placesClient = Places.createClient(this);
         // Set the fields to specify which types of place data to return.
@@ -366,7 +369,33 @@ public class SignUp extends AppCompatActivity {
             }
         }
     }
+    /*      // Set the fields to specify which types of place data to
+// return after the user has made a selection.
+List<Place.Field> fields = Arrays.asList(Place.Field.ID, Place.Field.NAME);
 
+// Start the autocomplete intent.
+Intent intent = new Autocomplete.IntentBuilder(
+        AutocompleteActivityMode.FULLSCREEN, fields)
+        .build(this);
+startActivityForResult(intent, AUTOCOMPLETE_REQUEST_CODE);
+*/
+
+    /*
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == AUTOCOMPLETE_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                Place place = Autocomplete.getPlaceFromIntent(data);
+                Log.i(TAG, "Place: " + place.getName() + ", " + place.getId());
+            } else if (resultCode == AutocompleteActivity.RESULT_ERROR) {
+                // TODO: Handle the error.
+                Status status = Autocomplete.getStatusFromIntent(data);
+                Log.i(TAG, status.getStatusMessage());
+            } else if (resultCode == RESULT_CANCELED) {
+                // The user canceled the operation.
+            }
+        }
+    } */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -393,7 +422,8 @@ public class SignUp extends AppCompatActivity {
 
         if(requestCode == 3 && resultCode == RESULT_OK) {
             Place place = Autocomplete.getPlaceFromIntent(data);
-
+            //Log.i(TAG, "Place: " + place.getName() + ", " + place.getId());
+            Log.i("TAG", "Place: " + place.getName() + ", " + place.getId());
             latitude = place.getLatLng().latitude;
             longitude = place.getLatLng().longitude;
 

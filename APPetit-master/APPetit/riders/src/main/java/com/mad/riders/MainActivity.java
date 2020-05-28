@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             progressDialog.setTitle("Authenticating...");
 
             findViewById(R.id.sign_up).setOnClickListener(e -> {
+                //TO DO, input check;
                 Intent login = new Intent(this, SignUp.class);
                 startActivityForResult(login, 1);
             });

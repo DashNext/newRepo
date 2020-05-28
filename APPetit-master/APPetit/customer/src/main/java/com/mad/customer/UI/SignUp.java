@@ -77,8 +77,9 @@ public class SignUp extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
-        // Initialize Places.
-        Places.initialize(getApplicationContext(), "AIzaSyCb9PlTGBrsiKPz_Vrd7YivegYxz437Y6o");
+        // Initialize Places. using Maps API key
+        Places.initialize(getApplicationContext(), "AIzaSyCeKNhWz_3m5vSbKfRkWox-ILAQNgXqbUM");
+//Places API key "AIzaSyCb9PlTGBrsiKPz_Vrd7YivegYxz437Y6o"
         // Create a new Places client instance.
         PlacesClient placesClient = Places.createClient(this);
         // Set the fields to specify which types of place data to return.
