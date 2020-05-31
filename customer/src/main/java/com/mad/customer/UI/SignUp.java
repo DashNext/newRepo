@@ -92,6 +92,10 @@ public class SignUp extends AppCompatActivity {
                     .build(this);
             startActivityForResult(intent, 3);
         });
+        findViewById(R.id.sign_up_back).setOnClickListener(e -> {
+            Intent i = new Intent(this, MainActivity.class);
+            startActivityForResult(i,1);
+        });
         Button confirm_reg = findViewById(R.id.sign_up);
         confirm_reg.setOnClickListener(e -> {
             if(checkFields()){
