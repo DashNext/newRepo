@@ -14,7 +14,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:autoSizeTextType="uniform"
-        android:text="0 | 0.00€"
+        android:text="0 | 0.00$"
         android:textAlignment="center"
         android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"

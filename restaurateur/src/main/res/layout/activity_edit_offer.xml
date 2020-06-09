@@ -97,7 +97,7 @@
             android:layout_marginStart="128dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/colorPrimary"
-            android:text="€"
+            android:text="$"
             android:textColor="@android:color/white"
             app:layout_constraintStart_toEndOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/description" />

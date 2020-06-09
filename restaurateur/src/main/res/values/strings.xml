@@ -8,7 +8,7 @@
     <string name="time">Reservation time:</string>
     <string name="set_price">Set price</string>
     <string name="point_symbol">.</string>
-    <string name="euro_symbol">€</string>
+    <string name="euro_symbol">$</string>
     <string name="quantity">Available quantity</string>
 
     <string name="facebook_app_id">368341310697307</string>

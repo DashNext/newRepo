@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">APPetit</string>
+    <string name="app_name">DashPanda</string>
     <string name="title_home">Home</string>
     <string name="title_profile">Profile</string>
     <string name="title_dailyoffer">Daily Offer</string>
@@ -8,7 +8,7 @@
     <string name="time">Reservation time:</string>
     <string name="set_price">Set price</string>
     <string name="point_symbol">.</string>
-    <string name="euro_symbol">€</string>
+    <string name="euro_symbol">$</string>
     <string name="quantity">Available quantity</string>
 
     <!-- TODO: Remove or change this placeholder text -->

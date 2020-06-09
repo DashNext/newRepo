@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sign_in"
         app:layout_constraintVertical_bias="0.078" />
 
-    <Button
+    <TextView
         android:id="@+id/browse_now"
         android:layout_width="212dp"
         android:layout_height="47dp"
@@ -50,15 +50,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="#BE340A"
-        android:text="Browse Now!"
-        android:textColor="#fff"
+        android:backgroundTint="#F8F8F8"
+        android:text="Or Start Browsing"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.792"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_in"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintVertical_bias="0.506" />
 
     <EditText
         android:id="@+id/email"
@@ -69,7 +70,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="example@email.it"
+        android:hint="example@email.com"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

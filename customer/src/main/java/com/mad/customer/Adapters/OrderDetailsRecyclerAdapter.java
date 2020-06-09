@@ -51,7 +51,7 @@ public class OrderDetailsRecyclerAdapter extends RecyclerView.Adapter<OrderDetai
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     dish_name.setText((String)dataSnapshot.child("name").getValue());
-                    dish_price.setText((new DecimalFormat("#.##")).format(dataSnapshot.child("price").getValue()).toString()+" €");
+                    dish_price.setText((new DecimalFormat("#.##")).format(dataSnapshot.child("price").getValue()).toString()+" $");
                 }
 
                 @Override

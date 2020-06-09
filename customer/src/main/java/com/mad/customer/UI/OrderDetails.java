@@ -97,8 +97,8 @@ public class OrderDetails extends AppCompatActivity {
                 break;
         }
         //Set total
-        ((TextView)findViewById(R.id.order_det_tot1)).setText(item.getTotPrice()+" €");
-        ((TextView)findViewById(R.id.order_det_tot)).setText(item.getTotPrice()+" €");
+        ((TextView)findViewById(R.id.order_det_tot1)).setText(item.getTotPrice()+" $");
+        ((TextView)findViewById(R.id.order_det_tot)).setText(item.getTotPrice()+" $");
         //Set customer addr
         ((TextView)findViewById(R.id.order_det_deladdr)).setText(item.getAddrCustomer());
         //Set hour

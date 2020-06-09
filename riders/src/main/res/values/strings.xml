@@ -10,7 +10,7 @@
     <string name="time">Reservation time:</string>
     <string name="set_price">Set price</string>
     <string name="point_symbol">.</string>
-    <string name="euro_symbol">€</string>
+    <string name="euro_symbol">$</string>
     <string name="quantity">Available quantity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
