@@ -7,7 +7,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constrainId"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -207,5 +207,5 @@
             app:layout_constraintStart_toEndOf="@+id/cash_text"
             app:srcCompat="@drawable/rider" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </com.mad.mylibrary.CustomScrollView>

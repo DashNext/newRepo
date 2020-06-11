@@ -2,7 +2,7 @@ package com.mad.mylibrary;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -100,7 +100,7 @@ public class Utilities {
     public static String getDateFromTimestamp(Long timestamp){
         Date d = new Date(timestamp);
         Calendar c = Calendar.getInstance();
-        c.setTime(d);
+        /*c.setTime(d);
         int hourValue = c.get(Calendar.HOUR);
         int minValue =c.get(Calendar.MINUTE);
         String hourString = Integer.toString(hourValue), minString = Integer.toString(minValue);
@@ -110,6 +110,12 @@ public class Utilities {
         if(minValue < 10)
             minString = "0" + minValue;
 
-        return hourString + ":" + minString;
+        return hourString + ":" + minString;*/
+        c.setTime(d);
+        String dateString = Integer.toString(c.get(Calendar.MONTH))+Integer.toString(c.get(Calendar.DATE));
+        /*c.set(Calendar.HOUR_OF_DAY,0);
+        c.set(Calendar.MINUTE,0);
+        c.set(Calendar.SECOND,0);*/
+        return dateString;
     }
 }

@@ -12,7 +12,6 @@ import com.google.android.libraries.places.widget.model.AutocompleteActivityMode
 import com.mad.customer.R;
 import com.mad.mylibrary.User;
 
-import static com.mad.customer.R.color.colorPrimary;
 import static com.mad.mylibrary.SharedClass.*;
 
 import android.Manifest;
@@ -24,12 +23,12 @@ import android.icu.text.SimpleDateFormat;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.design.widget.TextInputEditText;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.FileProvider;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -78,8 +77,9 @@ public class SignUp extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
-        // Initialize Places.
-        Places.initialize(getApplicationContext(), "AIzaSyAAzAER-HprZhx5zvmEYIjVlJfYSHj2-G8");
+        // Initialize Places. using Maps API key
+        Places.initialize(getApplicationContext(), "AIzaSyCeKNhWz_3m5vSbKfRkWox-ILAQNgXqbUM");
+//Places API key "AIzaSyCb9PlTGBrsiKPz_Vrd7YivegYxz437Y6o"
         // Create a new Places client instance.
         PlacesClient placesClient = Places.createClient(this);
         // Set the fields to specify which types of place data to return.
