@@ -221,7 +221,7 @@ public class OrderingFragment extends Fragment {
             TextView cart = menuItem.getActionView().findViewById(R.id.money);
             String snum = getQuantity(nums);
             String tot = calcoloTotale(prices, nums);
-            cart.setText(snum+" | "+tot+"€");
+            cart.setText(snum+" | $ "+tot);
         }
         super.onPrepareOptionsMenu(menu);
     }

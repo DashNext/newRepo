@@ -32,7 +32,7 @@ public class DailyOfferViewHolder extends RecyclerView.ViewHolder{
 
         this.dishName.setText(current.getName());
         this.dishDesc.setText(current.getDesc());
-        this.dishPrice.setText(current.getPrice() + " €");
+        this.dishPrice.setText(current.getPrice() + " $");
         if (current.getPhotoUri() != null) {
             Glide.with(view.getContext()).load(current.getPhotoUri()).override(80,80).into(dishPhoto);
         }

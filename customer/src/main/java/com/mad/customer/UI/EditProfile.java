@@ -107,6 +107,12 @@ public class EditProfile extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), error_msg, Toast.LENGTH_LONG).show();
             }
         });
+
+        findViewById(R.id.edit_profile_back).setOnClickListener(e -> {
+            Intent i = new Intent(this, Profile.class);
+            startActivityForResult(i,1);
+        });
+
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         findViewById(R.id.plus).setOnClickListener(p -> editPhoto());

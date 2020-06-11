@@ -64,7 +64,7 @@ public class ConfirmRecyclerAdapter extends RecyclerView.Adapter<ConfirmRecycler
         String quantity  = quantities.get(position);
         myViewHolder.dish_name.setText(name);
         myViewHolder.dish_quant.setText(quantity);
-        myViewHolder.dish_price.setText(price + " €");
+        myViewHolder.dish_price.setText(price + " $");
 
 
     }

@@ -244,7 +244,7 @@ public class Confirm extends AppCompatActivity {
     public void updatePrice (){
         tot =calcoloTotale(prices, nums);
         TextView totale = findViewById(R.id.totale);
-        totale.setText(tot + " €");
+        totale.setText(tot + " $");
     }
 
 }

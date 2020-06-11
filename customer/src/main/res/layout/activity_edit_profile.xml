@@ -17,7 +17,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="44dp"
             android:ems="10"
-            android:hint="Mail_address"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +48,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="44dp"
             android:ems="10"
-            android:hint="Phone numbert"
+            android:hint="Phone number"
             android:inputType="phone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -62,7 +62,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="44dp"
             android:ems="10"
-            android:hint="Surname"
+            android:hint="Last Name"
             android:inputType="textPersonName|textCapWords|textMultiLine"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -76,11 +76,29 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="44dp"
             android:ems="10"
-            android:hint="Nameame"
+            android:hint="First Name"
             android:inputType="textPersonName|textCapWords"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_profile" />
+
+        <Button
+            android:id="@+id/edit_profile_back"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#fff"
+            android:text="Back"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.117"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
             android:id="@+id/back_order_button"
@@ -95,9 +113,10 @@
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.882"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/address_modify" />
+            app:layout_constraintTop_toBottomOf="@+id/address_modify"
+            app:layout_constraintVertical_bias="0.0" />
 
         <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/img_profile"

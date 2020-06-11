@@ -53,7 +53,7 @@ class ViewHolderDailyOffer extends RecyclerView.ViewHolder{
     void setData(DishItem current, int position){
         this.dishName.setText(current.getName());
         this.dishDesc.setText(current.getDesc());
-        this.dishPrice.setText(current.getPrice() + " €");
+        this.dishPrice.setText(current.getPrice() + " $");
         this.dishQuantity.setText(String.valueOf(current.getQuantity()));
 
         if(current.getPhoto() != null)

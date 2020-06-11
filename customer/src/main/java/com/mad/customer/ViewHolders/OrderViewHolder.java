@@ -82,7 +82,7 @@ public class OrderViewHolder extends RecyclerView.ViewHolder{
                 break;
         }
 
-        total.setText(current.getTotPrice()+" €");
+        total.setText(current.getTotPrice()+" $");
         Query query = FirebaseDatabase.getInstance().getReference(RESTAURATEUR_INFO).child(current.getKey()).child("info");
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

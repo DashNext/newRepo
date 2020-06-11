@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(i,1);
         });
 
+        findViewById(R.id.browse_now).setOnClickListener(e -> {
+            Intent i = new Intent(this, NavApp.class);
+            startActivityForResult(i,1);
+        });
+
         findViewById(R.id.sign_in).setOnClickListener(e -> {
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Authenticating...");
