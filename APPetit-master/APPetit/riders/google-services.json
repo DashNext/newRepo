@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "758259129293",
+    "firebase_url": "https://dashpanda-306e5.firebaseio.com",
+    "project_id": "dashpanda-306e5",
+    "storage_bucket": "dashpanda-306e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758259129293:android:ad265a15882d393ca10284",
+        "android_client_info": {
+          "package_name": "com.mad.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758259129293-egmo0cu6g7e2mm258v9judt8ensov0v9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mad.customer",
+            "certificate_hash": "96ff4a5c1bf823578bb24fd17abfa55147f228e9"
+          }
+        },
+        {
+          "client_id": "758259129293-g8ggfqmvtqeai7c1rn8ooa5p4u3hntcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMwA0Y9dW9rMq8k_XEuXlwM9l4UBBV_S8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "758259129293-g8ggfqmvtqeai7c1rn8ooa5p4u3hntcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
